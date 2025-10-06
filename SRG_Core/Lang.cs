@@ -38,6 +38,49 @@ public class Lang
     public string HttpMonitor { get; set; } = "HTTP";
     public string SocketMonitor { get; set; } = "Socket";
 
+    // UI strings for SergerGUI
+    public string Welcome { get; set; } = "Welcome to Serger!";
+    public string SergerSettings { get; set; } = "Serger Settings";
+    public string NewMonitor { get; set; } = "New monitor";
+    public string Monitoring { get; set; } = "Monitoring:";
+    public string LastCheck { get; set; } = "Last check: {0:G}";
+    public string Edit { get; set; } = "Edit";
+    public string Remove { get; set; } = "Remove";
+    public string Application { get; set; } = "Application";
+    public string ExitSerger { get; set; } = "Exit Serger";
+    public string Monitor { get; set; } = "Monitor";
+    public string CreateNew { get; set; } = "Create new…";
+    
+    // Monitor Editor strings
+    public string MonitorEditor { get; set; } = "Monitor Editor";
+    public string ConfigureMonitor { get; set; } = "Configure monitor";
+    public string Type { get; set; } = "Type";
+    public string Host { get; set; } = "Host";
+    public string Uri { get; set; } = "URI";
+    public string IntervalMs { get; set; } = "Interval (ms)";
+    public string TimeoutMs { get; set; } = "Timeout (ms)";
+    public string Port { get; set; } = "Port";
+    public string ValidCodes { get; set; } = "Valid codes";
+    public string ValidCodesExample { get; set; } = "e.g. 200,201";
+    public string BodyRegex { get; set; } = "Body regex";
+    public string Ok { get; set; } = "OK";
+    public string Cancel { get; set; } = "Cancel";
+    
+    // Monitor Item View strings
+    public string Interval { get; set; } = "Interval";
+    public string Timeout { get; set; } = "Timeout";
+    public string Codes { get; set; } = "Codes";
+    public string Any { get; set; } = "any";
+    
+    // Notification strings
+    public string Down { get; set; } = "Down";
+    public string Up { get; set; } = "Up";
+    public string IsDown { get; set; } = "is down";
+    public string IsBackOnline { get; set; } = "is back online";
+    
+    // Error messages
+    public string UnknownMonitorType { get; set; } = "Unknown monitor type";
+
     public static Lang LoadLang(string langCode)
     {
         // Prefer per-user app data Langs directory
